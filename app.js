@@ -7,6 +7,8 @@ const elWeatherBody = document.querySelector(".weather_body");
 elForm.addEventListener("submit", async (ent) => {
   ent.preventDefault();
 
+  elWeatherBody.innerHTML = null;
+
   const inputvalue = elCityInput.value;
 
   const request = await fetch(
